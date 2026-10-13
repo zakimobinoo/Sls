@@ -111,7 +111,12 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      let txt = translations[lang][key];
+      // Seamless infinite scroll: duplicate text so loop has no gap
+      if (key === 'scrollText') {
+        txt = txt + '\n\n' + txt;
+      }
+      el.textContent = txt;
     }
   });
 
