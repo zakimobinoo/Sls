@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تماس با گلف وی - Contact Golf Way">
+  <title>تماس با ما | Contact Golf Way</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="welcome-banner">
+    <span data-i18n="welcome">خوش آمدید به Golf Way</span>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html"><img src="golfway.png" alt="Golf Way Logo" class="nav-logo" onerror="this.style.display='none'"></a>
+    <a href="index.html" class="nav-btn" data-i18n="homeTitle">خانه</a>
+    <a href="cars.html" class="nav-btn" data-i18n="buyCar">خرید ماشین</a>
+    <a href="properties.html" class="nav-btn" data-i18n="buyProperty">خرید ملک</a>
+    <a href="gallery.html" class="nav-btn" data-i18n="gallery">گالری تصاویر</a>
+    <a href="about.html" class="nav-btn" data-i18n="about">درباره ما</a>
+    <a href="contact.html" class="nav-btn" data-i18n="contact">تماس با ما</a>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="fa" onclick="setLanguage('fa')">FA</button>
+      <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="carousel-title" data-i18n="contactTitle">تماس با ما</h1>
+
+    <!-- کارت‌های تماس: تلفن، تلگرام، اینستا، واتساپ -->
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="contact-icon">📞</span>
+        <h3 data-i18n="phone">تلفن تماس</h3>
+        <a href="#">*** *** ****</a><br>
+        <a href="#">*** ** **** ****</a>
+      </div>
+
+      <div class="contact-card">
+        <span class="contact-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="#0088cc"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+        </span>
+        <h3 data-i18n="telegram">تلگرام</h3>
+        <a href="https://t.me/golfway" target="_blank" rel="noopener">@GolfWay</a>
+      </div>
+
+      <div class="contact-card">
+        <span class="contact-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="#E1306C"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </span>
+        <h3 data-i18n="instagram">اینستاگرام</h3>
+        <a href="https://instagram.com/golfway" target="_blank" rel="noopener">@GolfWay</a>
+      </div>
+
+      <div class="contact-card">
+        <span class="contact-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </span>
+        <h3 data-i18n="whatsapp">واتساپ</h3>
+        <a href="https://wa.me/989123456789" target="_blank" rel="noopener">*** *** ****</a>
+      </div>
+    </div>
+
+    <!-- فرم درخواست با موضوع و پیام بزرگ -->
+    <div class="contact-form-wrap">
+      <form id="contactForm" class="contact-form">
+        <h2 data-i18n="formTitle">ارسال درخواست</h2>
+
+        <div class="form-group">
+          <label for="formName" data-i18n="formName">نام و نام خانوادگی</label>
+          <input type="text" id="formName" name="name" placeholder="...">
+        </div>
+
+        <div class="form-group">
+          <label for="formEmail" data-i18n="formEmail">ایمیل شما</label>
+          <input type="email" id="formEmail" name="email" placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="formSubject" data-i18n="formSubject">موضوع</label>
+          <input type="text" id="formSubject" name="subject" required placeholder="موضوع درخواست">
+        </div>
+
+        <div class="form-group">
+          <label for="formMessage" data-i18n="formMessage">متن درخواست / پیام</label>
+          <textarea id="formMessage" name="message" required placeholder="متن کامل درخواست خود را اینجا بنویسید..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" data-i18n="formSubmit">ارسال به مدیریت</button>
+        <p class="form-note" data-i18n="formNote">وقتی ایمیل مدیریت را بدهید، پیام مستقیماً به آن ارسال می‌شود.</p>
+      </form>
+    </div>
+  </main>
+
+    <footer>
+    <div class="footer-top">
+      <div class="footer-urgent">
+        <h3 data-fa="فروش فوری" data-en="Urgent Sale" data-ar="بيع فوري">فروش فوری</h3>
+        <div class="urgent-gallery">
+          <img src="https://picsum.photos/id/164/300/200" alt="Urgent 1" data-images="https://picsum.photos/id/164/800/600|https://picsum.photos/id/165/800/600|https://picsum.photos/id/166/800/600" loading="lazy">
+          <img src="https://picsum.photos/id/201/300/200" alt="Urgent 2" data-images="https://picsum.photos/id/201/800/600|https://picsum.photos/id/202/800/600|https://picsum.photos/id/203/800/600" loading="lazy">
+          <img src="https://picsum.photos/id/238/300/200" alt="Urgent 3" data-images="https://picsum.photos/id/238/800/600|https://picsum.photos/id/239/800/600|https://picsum.photos/id/240/800/600" loading="lazy">
+        </div>
+      </div>
+            <div class="footer-promo" style="display:none;"></div>
+    </div>
+    <div class="footer-mid">
+      <p><strong><a href="about.html" data-i18n="about">درباره ما</a></strong><br>
+      <span data-fa="خرید و فروش ویلا، آپارتمان و زمین در گیلان با بیش از ۱۰ سال فعالیت در زمینه املاک و اتومبیل در خدمت مشتریان گرامی هستیم" data-en="Buying and selling villas, apartments and land in Gilan with more than 10 years of experience in real estate and automobiles, serving our valued customers" data-ar="شراء وبيع الفلل والشقق والأراضي في جيلان مع أكثر من ١٠ سنوات من النشاط في العقارات والسيارات في خدمة عملائنا الكرام">خرید و فروش ویلا، آپارتمان و زمین در گیلان با بیش از ۱۰ سال فعالیت در زمینه املاک و اتومبیل در خدمت مشتریان گرامی هستیم</span></p>
+      <p style="margin-top:8px;"><a href="contact.html" data-i18n="contact">تماس با ما</a></p>
+      <p style="margin-top:10px;" data-fa="به شبکه‌های اجتماعی ما بپیوندید" data-en="Join our social networks" data-ar="انضموا إلى شبكاتنا الاجتماعية">به شبکه‌های اجتماعی ما بپیوندید</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/golfway" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <a href="https://t.me/golfway" target="_blank" rel="noopener" aria-label="Telegram">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>
+          Telegram
+        </a>
+        <a href="https://wa.me/989123456789" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Golf Way — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="web.mp3" type="audio/mpeg">
+  </audio>
+  <button id="audioBtn" class="audio-control" onclick="toggleAudio()">🎵</button>
+
+    <div id="imageModal" class="modal">
+    <button type="button" class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <button type="button" class="modal-nav modal-prev" onclick="modalPrev()" aria-label="Previous">&#10094;</button>
+    <img id="modalImage" class="modal-img" src="" alt="Enlarged">
+    <button type="button" class="modal-nav modal-next" onclick="modalNext()" aria-label="Next">&#10095;</button>
+    <div id="modalCounter" class="modal-counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
